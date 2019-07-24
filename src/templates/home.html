@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<h1>Hello World!</h1>
+<p>This is a template.</p>
+<p>You are requesting this page as... {{ request.user }}</p>
+
+
+{% load static %} <img src="{% media "investing_opportunities_research.jpg" %}" alt="image alt text" />
+
+
+{% endblock %}
